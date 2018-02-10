@@ -1,0 +1,8 @@
+version: '2'
+services:
+    app:
+        image: jupyter/all-spark-notebook
+        ports:
+            - "8888:8888"
+        volumes:
+            - ./code:/home/jovyan/work
